@@ -1,0 +1,166 @@
+@import url("https://fonts.google.com/specimen/Poppins?query=Poppins");
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins";
+}
+
+body {
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+ background: url("assets/Background12.jpg") no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 14vh;
+ padding: 20px 100px;
+ background: rgb(190, 50, 50);
+}
+
+.navigation {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 50%;
+}
+
+.navigation a {
+ text-decoration: none;
+ color: white;
+ margin-left: 40px;
+ font-size: 1.1em;
+ font-weight: 500;
+}
+
+.navigation .loginbtn {
+ width: 130px;
+ height: 50px;
+ background: transparent;
+ border: 2px solid #fff;
+ outline: none;
+ cursor: pointer;
+ border-radius: 6px;
+ font-size: 1.1em;
+ font-weight: 500;
+ margin-left: 40px;
+ transition: ease 0.5s;
+ color: #fff;
+}
+
+.navigation .loginbtn:hover {
+ background: #f0e1e1;
+ color: #b3c515;
+}
+
+main {
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 14vh 0; /* Adjust the padding to account for the header */
+}
+
+.contact-section {
+ width: 100%;
+ max-width: 500px;
+ background-color: rgba(92, 114, 114, 0.8);
+ border: 2px solid rgb(5, 56, 59);
+ border-radius: 20px;
+ box-shadow: 0 0 30px rgb(9, 78, 83);
+ padding: 40px;
+ text-align: center;
+ height : 500px;
+}
+
+.contact-section h2 {
+ font-size: 2em;
+ color: #32b4ec;
+ margin-bottom: 20px;
+}
+
+.contact-section p {
+ font-size: 1.2em;
+ color: #ffffff;
+ margin-bottom: 30px;
+}
+
+.input-box {
+ position: relative;
+ width: 100%;
+ height: 50px;
+ border-bottom: 2px solid #7cb1c7;
+ margin: 30px 0;
+ padding: 10px 0px;
+}
+
+.input-box input, .input-box textarea {
+ width: 100%;
+ height: 100%;
+ background: transparent;
+ border: none;
+ outline: none;
+ font-size: 1.2em;
+ font-weight: 600;
+ color: #ffffff;
+ padding: 0 35px 0 5px;
+}
+
+.input-box label {
+ color: #32b4ec;
+ position: absolute;
+ top: 50%;
+ left: 5px;
+ transform: translateY(-30px);
+ font-size: 1.21em;
+ font-weight: 500;
+ pointer-events: none;
+ transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box textarea:focus ~ label,
+.input-box textarea:valid ~ label {
+ top: -2px;
+}
+
+.btn {
+ width: 100%;
+ height: 45px;
+ background: #32b4ec;
+ border: none;
+ cursor: pointer;
+ font-family: 'Nanum Gothic', sans-serif;
+ font-size: 16px;
+ border-radius: 6px;
+ padding: 10px 0;
+ margin-top: 20px;
+}
+
+.btn:hover {
+ box-shadow: 0 0 15px;
+}
+
+footer {
+ background: rgb(190, 50, 50);
+ color: white;
+ text-align: center;
+ padding: 10px 0;
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ box-sizing: border-box;
+}

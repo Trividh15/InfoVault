@@ -1,0 +1,270 @@
+@import url("https://fonts.google.com/specimen/Poppins?query=Poppins");
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.logo {
+  left: 0px;
+  color: #fff;
+  user-select: none;
+  padding: 0px 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  background: url("assets/Background12.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height : 14vh;
+  padding: 20px 100px;
+  background: rgb(190, 50, 50);
+}
+
+.navigation {
+  justify-content: space-between;
+  position: relative;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a {
+  text-decoration: none; 
+  color: white;
+  margin-left: 40px;
+  font-size: 1.1em;
+  font-weight: 500;
+  justify-content: space-between;
+  position: relative; 
+}
+
+.navigation a:after {
+  content: "";
+  position: absolute;
+  left: 0; 
+  bottom: -3px; 
+  width: 0; 
+  height: 2px; 
+  background-color: #fff;
+  transition: width 0.3s ease-in-out; 
+}
+
+.navigation a:hover::after {
+   width: 100%;
+}
+
+.navigation .loginbtn {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: ease 0.5s;
+  color: #fff;
+}
+
+.navigation .loginbtn:hover {
+  background: #f0e1e1;
+  color: #b3c515;
+}
+
+.wrapper {
+  display : flex;
+  /* position: center; */
+  /* top : 50px; */
+  width: 400px;
+  height: 440px;
+  background-color: rgba(92, 114, 114, 0.8);
+  border: 2px solid rgb(5, 56, 59);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgb(9, 78, 83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding : 10px 15px;
+}
+
+.wrapper .formboxlogin {
+  width: 100%;
+  padding: 40px;
+}
+
+.formboxlogin h2 {
+  font-size: 2em;
+  color: #32b4ec;
+  text-align: center;
+  user-select: none;
+  
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #7cb1c7;
+  margin: 30px 0;
+  padding: 10px 0px;
+  user-select: none;
+}
+
+.input-box label {
+  color: #32b4ec;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-30px);
+  font-size: 1.21em;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+  user-select: none;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 57px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -2px;
+}
+
+.rememberforgot {
+  font-size: 0.9em;
+  color: #32b4ec;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.rememberforgot label input {
+  accent-color: rgb(0, 149, 45);
+  margin-right: 3px;
+}
+
+.rememberforgot a {
+  color: rgb(171, 26, 36);
+  text-decoration: none;
+  font-weight: bold;
+
+  font-size: 1rem;
+}
+
+
+.rememberforgot a:hover {
+  text-decoration: underline;
+}
+
+.btn{
+  width : 100%;
+  height : 45px;
+  background :  #32b4ec;
+  border : none;
+  cursor : pointer;
+  font-family : 'Nanum Gothic', sans-serif;
+  font-size : 16px;
+  border-radius: 6px;
+  padding : 10px 0;
+}
+
+.btn:hover{
+  box-shadow: 0 0 15px;
+}
+
+.loginregister{
+  font-size: 0.9em;
+  color: #4dc1d6;
+  font-weight: 500;
+  /* margin: -15px 0 15px; */
+  display: flex;
+  bottom : 0%;
+  position : sticky;
+  justify-content: space-between;
+  text-align: center;
+  user-select: none;
+  align-items: center;
+
+}
+
+.loginregister a{
+  color: rgb(171, 26, 36);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  font-size: 1em;
+  right : 0;
+}
+
+.loginregister a:hover{
+  text-decoration: underline; 
+}
+
+.show{
+  display : block;
+}
+
+#welcomeMsg{
+  font-size : 1.5em;
+}
+
+footer {
+  background: rgb(190, 50, 50);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  user-select: none;
+  width: 100%; 
+  box-sizing: border-box; 
+ }
+ 
+
+#welcomeMsg{
+  user-select : none;
+}
